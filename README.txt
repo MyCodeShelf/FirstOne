@@ -318,5 +318,35 @@ hint: Fix them up in the work tree, and then use 'git add/rm <file>'
 hint: as appropriate to mark resolution and make a commit.
 fatal: Exiting because of an unresolved conflict.
 
-C:\Git\FirstOne>
+C:\Git\FirstOne>git checkout experimentalBranch
+Switched to branch 'experimentalBranch'
 
+C:\Git\FirstOne>git push
+fatal: The current branch experimentalBranch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin experimentalBranch
+
+
+C:\Git\FirstOne>git status
+On branch experimentalBranch
+nothing to commit, working tree clean
+
+C:\Git\FirstOne> git push --set-upstream origin experimentalBranch
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 622 bytes | 155.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'experimentalBranch' on GitHub by visiting:
+remote:      https://github.com/rajputszapp/FirstOne/pull/new/experimentalBranch
+remote:
+To https://github.com/rajputszapp/FirstOne.git
+ * [new branch]      experimentalBranch -> experimentalBranch
+Branch 'experimentalBranch' set up to track remote branch 'experimentalBranch' from 'origin'.
+
+C:\Git\FirstOne>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
