@@ -1,4 +1,4 @@
-Fix done Finally
+Fix done
 
 C:\Git\FirstOne>git branch -r
 
