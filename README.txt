@@ -1,5 +1,9 @@
+
 /***********************************************Author-Vikas Chauhan***************************************************/
 // * My cmd logs *//
+/*                          Git Logs                  */
+
+>>>>>>> master
 C:\Git\FirstOne>git branch -r
 
 C:\Git\FirstOne>git branch
