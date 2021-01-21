@@ -1,0 +1,13 @@
+You make a feature branch f1 out of master when master was at commit m1 , while working on feature branch f1 ,master moved to 1 commit next .i.e m2 
+with few changes. But for merging feature branch we need to update feature branch with latest updates of master m2 and resolve any merge conflicts if any:
+
+git checkout master
+git pull
+git checkout featureBranch
+git merge master
+//resolve any conflicts if there 
+git add the files after resolving conflicts
+git commit 
+git push feature branch 
+
+//now post review it can be merged with master
